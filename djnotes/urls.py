@@ -20,7 +20,7 @@ from managenotes.api import PersonalNoteViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r'notes', PersonalNoteViewSet)
+router.register('notes', PersonalNoteViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
